@@ -1,422 +1,88 @@
 <html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IoT Health2</title>
+    <title>Log In 2</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="The HTML5 Herald" />
+    <meta name="author" content="Wadie Mendja" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-    <link rel="stylesheet" href="bootstrap-file/css/bootstrap.min.css" />
-
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
-    />
-
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./login.css" />
   </head>
   <body>
-    <script src="./script2.js"></script>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#mynav"
-          aria-controls="mynav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="#">
-          <div class="d-flex">
-            <div><img src="./images/logo.png" alt="" height="50" /></div>
-            <div class="ms-3 d-flex flex-column">
-              <div class="h4">health-E</div>
-              <div class="fs-6">IoT Patient Health Monitoring System</div>
-            </div>
-          </div>
-        </a>
-        <div class="collapse navbar-collapse" id="mynav">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Home <span class="fas fa-th-large px-1"></span
-              ></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Analytics</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"> </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./login/login.html">
-                <span class="fas fa-user pe-2"></span> Log In</a
-              >
-            </li>
-          </ul>
-        </div>
+    <script type="text/javascript" src="login.js"></script>
+    <div class="container">
+      <div class="nav">
+        <ul>
+          <li>
+            <img src="./images/logo.png" alt="" height="30" />
+            health-E
+          </li>
+          <li class="gray">Home</li>
+          <li class="gray">Join</li>
+        </ul>
       </div>
-    </nav>
-
-    <div class="container mt-4">
-      <div class="row">
-        <div class="col-lg-3 my-lg-0 my-md-1">
-          <div id="sidebar" class="bg-purple">
-            <div class="h4 text-white">Dashboard</div>
-            <ul>
-              <li class="active">
-                <a
-                  href="#"
-                  class="text-decoration-none d-flex align-items-start"
-                >
-                  <div class="fas fa-box pt-2 me-3"></div>
-                  <div class="d-flex flex-column">
-                    <div class="link">Patients</div>
-                    <div class="link-desc">View and Monitor Patients</div>
-                  </div>
-                </a>
-              </li>
-              <li></li>
-
-              <li>
-                <a
-                  href="#"
-                  class="text-decoration-none d-flex align-items-start"
-                >
-                  <div class="far fa-user pt-2 me-3"></div>
-                  <div class="d-flex flex-column">
-                    <div class="link">Profile</div>
-                    <div class="link-desc">Manage Profile</div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="text-decoration-none d-flex align-items-start"
-                >
-                  <div class="fas fa-headset pt-2 me-3"></div>
-                  <div class="d-flex flex-column">
-                    <div class="link">Help & Support</div>
-                    <div class="link-desc">Contact Us for help and support</div>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
+      <div class="hero">
+        <div class="text">
+          <p class="gray">START FOR FREE</p>
+          <h1>Sign In <span class="blue">.</span></h1>
+          <p class="gray">Not A Member ? <span class="blue">Sign Up</span></p>
         </div>
-        <div class="col-lg-9 my-lg-0 my-1">
-          <div id="main-content" class="bg-white border">
-            <div class="d-flex flex-column">
-              <div class="h5">Patient1</div>
-              <div class="h5">Live Monitoring</div>
-            </div>
-            <div class="d-flex my-4 flex-wrap">
-              <div class="box me-4 my-1 bg-light">
-                <img src="./images/bpm.png" alt="" />
-                <div class="d-flex align-items-center mt-2">
-                  <div class="tag">Heart Rate</div>
-                  <div id="a" class="ms-auto number"></div>
-                  <div class="unit">bpm</div>
-                </div>
-              </div>
 
-              <div class="box me-4 my-1 bg-light">
-                <img src="./images/sp.png" alt="" />
-                <div class="d-flex align-items-center mt-2">
-                  <div class="tag">SpO2</div>
-                  <div id="b" class="ms-auto number"></div>
-                  <div class="unit">%</div>
-                </div>
-              </div>
-
-              <div class="box me-4 my-1 bg-light">
-                <img src="./images/t.png" alt="" />
-                <div class="d-flex align-items-center mt-2">
-                  <div class="tag">Body Temp</div>
-                  <div id="e" class="ms-auto number"></div>
-                  <div class="unit">°C</div>
-                </div>
-              </div>
-
-              <div class="box me-4 my-1 bg-light">
-                <img src="./images/h.png" alt="" />
-                <div class="d-flex align-items-center mt-2">
-                  <div class="tag">Humidity</div>
-                  <div id="d" class="ms-auto number"></div>
-                  <div class="unit">%</div>
-                </div>
-              </div>
-
-              <div class="box me-4 my-1 bg-light">
-                <img src="./images/rT.png" alt="" />
-                <div class="d-flex align-items-center mt-2">
-                  <div class="tag">Temperature</div>
-                  <div id="c" class="ms-auto number"></div>
-                  <div class="unit">°C</div>
-                </div>
+        <div class="form">
+          <div class="id">
+            <div class="input-icons">
+              <legend for="email">Username</legend>
+              <div class="icon-center">
+                <input class="input" type="email" id="email" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-envelope-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"
+                  />
+                </svg>
               </div>
             </div>
-            <!-----Graph Plotting---->
-            <div class="text-uppercase">History</div>
-
-            <div class="order my-3 bg-light">
-              <div class="row">
-                <canvas id="myChart1" width="30" height="8"></canvas>
-                <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
-                <script>
-                  var date = new Date();
-                  var options = {
-                    hour: "numeric",
-                    minute: "numeric",
-                  };
-                  var timeString = date.toLocaleTimeString("en-US", options);
-
-                  var firebaseRefA = firebase.database().ref("Patient1/a");
-                  var ctx1 = document
-                    .getElementById("myChart1")
-                    .getContext("2d");
-
-                  let gradient1 = ctx1.createLinearGradient(0, 0, 0, 400);
-                  gradient1.addColorStop(0, "rgba(103,23,201,1)");
-                  gradient1.addColorStop(1, "rgba(201,22,84,0.1)");
-                  var myLineChart1 = new Chart(ctx1, {
-                    type: "line",
-                    data: {
-                      labels: [],
-                      datasets: [
-                        {
-                          label: "Heart Rate",
-                          data: [],
-
-                          fill: true,
-                          backgroundColor: gradient1,
-                          borderColor: "#380046",
-                          tension: 0.4,
-                        },
-                      ],
-                    },
-                  });
-                  firebaseRefA.on("value", function (snapshot) {
-                    snapshot.forEach(function (element) {
-                      myLineChart1.data.labels.push(timeString);
-                      myLineChart1.data.datasets[0].data.push(element.val());
-                      myLineChart1.update();
-                    });
-                  });
-                </script>
+            <div class="input-icons">
+              <legend for="password">Password</legend>
+              <div class="icon-center">
+                <input class="input" type="password" id="pass" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-eye-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                  <path
+                    d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"
+                  />
+                </svg>
               </div>
             </div>
+          </div>
 
-            <div class="order my-3 bg-light">
-              <div class="row">
-                <canvas id="myChart2" width="30" height="8"></canvas>
-                <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
-                <script>
-                  var date = new Date();
-                  var options = {
-                    hour: "numeric",
-                    minute: "numeric",
-                  };
-                  var timeString = date.toLocaleTimeString("en-US", options);
-
-                  var firebaseRefB = firebase.database().ref("Patient1/b");
-                  var ctx2 = document
-                    .getElementById("myChart2")
-                    .getContext("2d");
-
-                  let gradient2 = ctx2.createLinearGradient(0, 0, 0, 400);
-                  gradient2.addColorStop(0, "rgba(38,139,14,1)");
-                  gradient2.addColorStop(1, "rgba(148,245,125,0.3)");
-                  var myLineChart2 = new Chart(ctx2, {
-                    type: "line",
-                    data: {
-                      labels: [],
-                      datasets: [
-                        {
-                          label: "SpO2",
-                          data: [],
-                          fill: true,
-                          backgroundColor: gradient2,
-                          borderColor: "#066900",
-                          tension: 0.4,
-                        },
-                      ],
-                    },
-                  });
-                  firebaseRefB.on("value", function (snapshot) {
-                    snapshot.forEach(function (element) {
-                      myLineChart2.data.labels.push(timeString);
-                      myLineChart2.data.datasets[0].data.push(element.val());
-                      myLineChart2.update();
-                    });
-                  });
-                </script>
-              </div>
-            </div>
-
-            <div class="order my-3 bg-light">
-              <div class="row">
-                <canvas id="myChart3" width="30" height="8"></canvas>
-                <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
-                <script>
-                  var date = new Date();
-                  var options = {
-                    hour: "numeric",
-                    minute: "numeric",
-                  };
-                  var timeString = date.toLocaleTimeString("en-US", options);
-
-                  var firebaseRefC = firebase.database().ref("Patient1/e");
-                  var ctx3 = document
-                    .getElementById("myChart3")
-                    .getContext("2d");
-                  let gradient3 = ctx3.createLinearGradient(0, 0, 0, 400);
-                  gradient3.addColorStop(0, "rgba(181,61,0,1)");
-                  gradient3.addColorStop(1, "rgba(240,144,85,0.3)");
-                  var myLineChart3 = new Chart(ctx3, {
-                    type: "line",
-                    data: {
-                      labels: [],
-                      datasets: [
-                        {
-                          label: "Body Temperature",
-                          data: [],
-                          fill: true,
-                          backgroundColor: gradient3,
-                          borderColor: "#743700",
-                          tension: 0.4,
-                        },
-                      ],
-                    },
-                  });
-                  firebaseRefC.on("value", function (snapshot) {
-                    snapshot.forEach(function (element) {
-                      myLineChart3.data.labels.push(timeString);
-                      myLineChart3.data.datasets[0].data.push(element.val());
-                      myLineChart3.update();
-                    });
-                  });
-                </script>
-              </div>
-            </div>
-
-            <div class="order my-3 bg-light">
-              <div class="row">
-                <canvas id="myChart4" width="30" height="8"></canvas>
-                <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
-                <script>
-                  var date = new Date();
-                  var options = {
-                    hour: "numeric",
-                    minute: "numeric",
-                  };
-                  var timeString = date.toLocaleTimeString("en-US", options);
-
-                  var firebaseRefD = firebase.database().ref("Patient1/d");
-                  var ctx4 = document
-                    .getElementById("myChart4")
-                    .getContext("2d");
-                  let gradient4 = ctx4.createLinearGradient(0, 0, 0, 400);
-                  gradient4.addColorStop(0, "rgba(40,130,173,1)");
-                  gradient4.addColorStop(1, "rgba(171,227,254,0.3)");
-                  var myLineChart4 = new Chart(ctx4, {
-                    type: "line",
-                    data: {
-                      labels: [],
-                      datasets: [
-                        {
-                          label: "Humidity",
-                          data: [],
-                          fill: true,
-                          backgroundColor: gradient4,
-                          borderColor: "#00057C",
-                          tension: 0.4,
-                        },
-                      ],
-                    },
-                  });
-                  firebaseRefD.on("value", function (snapshot) {
-                    snapshot.forEach(function (element) {
-                      myLineChart4.data.labels.push(timeString);
-                      myLineChart4.data.datasets[0].data.push(element.val());
-                      myLineChart4.update();
-                    });
-                  });
-                </script>
-              </div>
-            </div>
-            <div class="order my-3 bg-light">
-              <div class="row">
-                <canvas id="myChart5" width="30" height="8"></canvas>
-                <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
-                <script>
-                  var date = new Date();
-                  var options = {
-                    hour: "numeric",
-                    minute: "numeric",
-                  };
-                  var timeString = date.toLocaleTimeString("en-US", options);
-
-                  var firebaseRefE = firebase.database().ref("Patient1/c");
-                  var ctx5 = document
-                    .getElementById("myChart5")
-                    .getContext("2d");
-                  let gradient5 = ctx5.createLinearGradient(0, 0, 0, 400);
-                  gradient5.addColorStop(0, "rgba(224,56,56,1)");
-                  gradient5.addColorStop(1, "rgba(251,152,152,0.3)");
-                  var myLineChart5 = new Chart(ctx5, {
-                    type: "line",
-                    data: {
-                      labels: [],
-                      datasets: [
-                        {
-                          label: "Room Temperature",
-                          data: [],
-                          fill: true,
-                          backgroundColor: gradient5,
-                          borderColor: "#8A0101",
-                          tension: 0.4,
-                        },
-                      ],
-                    },
-                  });
-                  firebaseRefE.on("value", function (snapshot) {
-                    snapshot.forEach(function (element) {
-                      myLineChart5.data.labels.push(timeString);
-                      myLineChart5.data.datasets[0].data.push(element.val());
-                      myLineChart5.update();
-                    });
-                  });
-                </script>
-              </div>
-            </div>
+          <div class="buttons">
+            <!-- <button class="btn gray-btn">Change method</button> -->
+            <button id="login" class="btn blue-btn">Log In</button>
           </div>
         </div>
       </div>
+      <!-- <div class="footer">AW</div> -->
     </div>
   </body>
 </html>

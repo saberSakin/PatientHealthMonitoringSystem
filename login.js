@@ -24,7 +24,7 @@ firebaseRef.once("value").then(function (snapshot) {
       username.value == loginInfo.username &&
       password.value == loginInfo.password
     ) {
-      location.replace("index.html");
+      location.replace("main.html");
     } else if (username.value != loginInfo.username) {
       username.style.borderColor = "red";
     } else if (password.value != loginInfo.password) {
