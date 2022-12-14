@@ -10,6 +10,7 @@ var firebaseConfig = {
   measurementId: "G-DD5HYPHN0K",
 };
 // Initialize Firebase
+
 firebase.initializeApp(firebaseConfig);
 
 const refs = ["a", "b", "c", "d", "e"];

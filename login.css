@@ -31,12 +31,12 @@ body {
   content: "";
   position: absolute;
   top: 0;
-  left: -50%;
+  left: -45%;
   width: 80%;
   height: 100%;
   background-color: rgb(140, 147, 223);
   box-shadow: 10em 0 7em 5em rgb(140, 147, 223);
-  transform: skew(45deg);
+  transform: skew(35deg);
   z-index: -1;
 }
 

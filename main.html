@@ -3,10 +3,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IoT Health2</title>
+    <title>health-E</title>
     <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
+
     <link rel="stylesheet" href="bootstrap-file/css/bootstrap.min.css" />
 
     <link
@@ -30,6 +33,7 @@
   </head>
   <body>
     <script src="./script2.js"></script>
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
         <button
@@ -186,7 +190,7 @@
             <div class="order my-3 bg-light">
               <div class="row">
                 <canvas id="myChart1" width="30" height="8"></canvas>
-                <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+
                 <script>
                   var date = new Date();
                   var options = {
@@ -219,6 +223,26 @@
                         },
                       ],
                     },
+                    options: {
+                      scales: {
+                        xAxes: [
+                          {
+                            ticks: {
+                              fontColor: "white",
+                              fontSize: 10,
+                            },
+                          },
+                        ],
+                        yAxes: [
+                          {
+                            ticks: {
+                              fontColor: "white",
+                              fontSize: 10,
+                            },
+                          },
+                        ],
+                      },
+                    },
                   });
                   firebaseRefA.on("value", function (snapshot) {
                     snapshot.forEach(function (element) {
@@ -234,7 +258,7 @@
             <div class="order my-3 bg-light">
               <div class="row">
                 <canvas id="myChart2" width="30" height="8"></canvas>
-                <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+
                 <script>
                   var date = new Date();
                   var options = {
@@ -266,6 +290,26 @@
                         },
                       ],
                     },
+                    options: {
+                      scales: {
+                        xAxes: [
+                          {
+                            ticks: {
+                              fontColor: "white",
+                              fontSize: 10,
+                            },
+                          },
+                        ],
+                        yAxes: [
+                          {
+                            ticks: {
+                              fontColor: "white",
+                              fontSize: 10,
+                            },
+                          },
+                        ],
+                      },
+                    },
                   });
                   firebaseRefB.on("value", function (snapshot) {
                     snapshot.forEach(function (element) {
@@ -281,7 +325,7 @@
             <div class="order my-3 bg-light">
               <div class="row">
                 <canvas id="myChart3" width="30" height="8"></canvas>
-                <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+
                 <script>
                   var date = new Date();
                   var options = {
@@ -312,6 +356,26 @@
                         },
                       ],
                     },
+                    options: {
+                      scales: {
+                        xAxes: [
+                          {
+                            ticks: {
+                              fontColor: "white",
+                              fontSize: 10,
+                            },
+                          },
+                        ],
+                        yAxes: [
+                          {
+                            ticks: {
+                              fontColor: "white",
+                              fontSize: 10,
+                            },
+                          },
+                        ],
+                      },
+                    },
                   });
                   firebaseRefC.on("value", function (snapshot) {
                     snapshot.forEach(function (element) {
@@ -327,7 +391,7 @@
             <div class="order my-3 bg-light">
               <div class="row">
                 <canvas id="myChart4" width="30" height="8"></canvas>
-                <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+
                 <script>
                   var date = new Date();
                   var options = {
@@ -358,6 +422,26 @@
                         },
                       ],
                     },
+                    options: {
+                      scales: {
+                        xAxes: [
+                          {
+                            ticks: {
+                              fontColor: "white",
+                              fontSize: 10,
+                            },
+                          },
+                        ],
+                        yAxes: [
+                          {
+                            ticks: {
+                              fontColor: "white",
+                              fontSize: 10,
+                            },
+                          },
+                        ],
+                      },
+                    },
                   });
                   firebaseRefD.on("value", function (snapshot) {
                     snapshot.forEach(function (element) {
@@ -372,7 +456,7 @@
             <div class="order my-3 bg-light">
               <div class="row">
                 <canvas id="myChart5" width="30" height="8"></canvas>
-                <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+
                 <script>
                   var date = new Date();
                   var options = {
@@ -402,6 +486,26 @@
                           tension: 0.4,
                         },
                       ],
+                    },
+                    options: {
+                      scales: {
+                        xAxes: [
+                          {
+                            ticks: {
+                              fontColor: "white",
+                              fontSize: 10,
+                            },
+                          },
+                        ],
+                        yAxes: [
+                          {
+                            ticks: {
+                              fontColor: "white",
+                              fontSize: 10,
+                            },
+                          },
+                        ],
+                      },
                     },
                   });
                   firebaseRefE.on("value", function (snapshot) {

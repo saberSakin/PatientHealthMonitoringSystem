@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "exceljs": "^4.3.0",
+    "file-saver": "^2.0.5",
+    "filesaverjs": "^1.2.0",
+    "js-xlsx": "^0.8.22",
+    "sheetjs": "^2.0.0",
+    "xlsx": "^0.18.5",
+    "xlsxjs": "^0.0.9"
+  }
+}
