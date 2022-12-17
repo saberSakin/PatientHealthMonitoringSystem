@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap");
+
+body {
+  background: linear-gradient(to left, #0f051f, #0c0a33, #22032c);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  min-height: 70px;
+}
+
+nav .navbar-brand .logo .h2 {
+  margin: 0;
+}
+
+nav .navbar-brand .h4 {
+  margin-bottom: 0px;
+  font-weight: 900;
+}
+
+nav .navbar-brand .fs-6 {
+  font-size: 0.88rem !important;
+}
+
+nav ul li {
+  padding: 0 20px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #333;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #4e2296;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: #451296;
+}
+
+#sidebar {
+  padding: 15px 0px 15px 0px;
+  border-radius: 10px;
+}
+
+#sidebar .h4 {
+  font-weight: 500;
+  padding-left: 15px;
+}
+
+#sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0rem;
+}
+
+#sidebar ul li {
+  padding: 10px 0;
+  display: block;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-left: 5px solid transparent;
+}
+
+#sidebar ul li.active {
+  border-left: 5px solid #ff5252;
+  background-color: #44007c;
+}
+
+#sidebar ul li a {
+  display: block;
+}
+
+#sidebar ul li a .fas,
+#sidebar ul li a .far {
+  color: #ddd;
+}
+
+#sidebar ul li a .link {
+  color: #fff;
+  font-weight: 500;
+}
+
+#sidebar ul li a .link-desc {
+  font-size: 0.8rem;
+  color: #ddd;
+}
+
+#main-content {
+  padding: 30px;
+  border-radius: 20px;
+}
+
+#main-content .box {
+  padding: 10px;
+  border-radius: 9px;
+  width: 220px;
+  height: 106px;
+}
+
+#main-content .box img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+#main-content .box .number {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.order {
+  padding: 10px 30px;
+  min-height: 180px;
+  border-radius: 10px;
+}
+
+.order .order-summary {
+  height: 100%;
+}
+
+.bg-purple {
+  background-color: #28272e;
+}
+
+.bg-light {
+  background-color: #6b6b6b8f !important;
+}
+.bg-white {
+  background-color: #28272e !important;
+}
+.border {
+  border: 2px solid #6e6e6e !important;
+}
+
+.h5 {
+  color: white;
+}
+.text-uppercase {
+  color: white;
+}
+.tag {
+  color: #ffffff;
+}
+.number {
+  color: #ffffff;
+}
+.unit {
+  color: white;
+}
+
+.button-1 {
+  background-color: #834cea;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: #280049;
+}
+
+.button-2 {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  width: 60px;
+  height: 35px;
+  line-height: 20px;
+  margin: 0;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  transition: color 100ms;
+  vertical-align: baseline;
+
+  touch-action: manipulation;
+}
+
+.name {
+  color: white;
+}
