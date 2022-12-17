@@ -83,7 +83,7 @@ function createExcelFile1() {
   var dataArray1 = labels1.map((label, index) => {
     return {
       x: label,
-      y: data1[index],
+      HeartRate: data1[index],
     };
   });
 
@@ -169,7 +169,7 @@ function createExcelFile2() {
   var dataArray2 = labels2.map((label, index) => {
     return {
       x: label,
-      y: data2[index],
+      SpO2: data2[index],
     };
   });
 
@@ -255,7 +255,7 @@ function createExcelFile3() {
   var dataArray3 = labels3.map((label, index) => {
     return {
       x: label,
-      y: data3[index],
+      BodyTemp: data3[index],
     };
   });
 
@@ -341,7 +341,7 @@ function createExcelFile4() {
   var dataArray4 = labels4.map((label, index) => {
     return {
       x: label,
-      y: data4[index],
+      Humidity: data4[index],
     };
   });
 
@@ -427,7 +427,7 @@ function createExcelFile5() {
   var dataArray5 = labels5.map((label, index) => {
     return {
       x: label,
-      y: data5[index],
+      RoomTemp: data5[index],
     };
   });
 
