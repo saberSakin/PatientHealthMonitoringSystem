@@ -1,3 +1,3 @@
 # PatientHealthMonitoringSystem
 
-health-E is a smart patient heath monitoring system. This project is both hardware and software based. 
+health-E is a smart patient heath monitoring system. This project is both hardware and software based. The hardware part uses ESP32, 0.96" OLED Display, MAX30100 Pulse Oximeter, DHT11 Humidity and Temperature Sensor and DS18b20 Temperature Sensor to measure patients BPM, SpO2, body-temperature, room humidity and temperature. The system stores the data in firebase. Blynk is used to monitor the realtime data in blynk app and web dashboard. A custom website is made for monitoring the realtime data changes and it also shows the realtime changes in graph. Previous range of data can also be seen as a graph and downloaded as excel file. HTML, CSS and Javascript is used to make the website.
